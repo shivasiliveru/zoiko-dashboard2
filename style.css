@@ -1,0 +1,409 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins';
+    }
+
+    /* Top bar with language selector */
+    .topbar {
+      background-color: #fff;
+      padding: 6px 20px;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 14px;
+      color: #000;
+    }
+
+    .topbar .language {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .topbar .language img {
+      width: 18px;
+      margin-right: 6px;
+    }
+
+    /* Main Navbar */
+    .navbar {
+      background-color: #00718A;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 200px;
+      height: 82px;
+      background-color: #FFFFFF;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-menu a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+      font-weight: lighter;
+      font-family: poppins;
+      transition: color 0.3s;
+    }
+
+    .nav-menu a.dropdown::after {
+      font-size: 10px;
+      margin-left: 4px;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .search-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .my-orbit-btn {
+      background-color: #ffffff;
+      color: #4260A5;
+      border: none;
+      border-radius: 6px;
+      padding: 7px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      gap: 8px;
+    }
+    .logout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .my-orbit-btn::before {
+      margin-right: 6px;
+      font-size: 16px;
+    }
+
+    .my-orbit-btn::after {
+      font-size: 10px;
+      margin-left: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none; /* For simplicity, hide menu on small screens */
+      }
+    }
+.container {
+  padding: 30px 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.manage-link {
+  color: #0077b6;
+  font-size: 14px;
+  margin-left: 80px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-left: 80px;
+  margin-bottom: -10px;
+}
+
+.logout {
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+.main {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-item {
+  background-color: #eeeeee;
+  border-radius: 30px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-left: 60px;
+}
+
+.menu-item img {
+  width: 22px;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+.menu-item .arrow {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.menu-item:hover {
+  background-color: #00718a;
+  color: #FFFFFF;
+}
+
+/* Right Panel */
+.panel {
+  flex-grow: 1;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.illustration {
+  margin-bottom: 25px;
+}
+
+.plan-text {
+  font-size: 20px;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.plan-subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.buy-btn {
+    width: 238px;
+    height: 50px;
+  background-color: #00718a;
+  color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: none;
+  font-family: poppins;
+  font-weight:bold;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #00708a;
+}
+
+.footer {
+  background-color: #006b81;
+  color: white;
+  padding: 50px 60px 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo-section {
+  max-width: 250px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e2f6f9;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer-bottom-left {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-left h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-bottom-left ul li {
+  margin-bottom: 6px;
+}
+
+.footer-bottom-left a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-bottom-left a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-left p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Right Bottom */
+.footer-bottom-right {
+  text-align: center;
+  display: flex;
+  gap: 80px;
+}
+
+.social-section h4 {
+  margin-top: 60px; 
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+
+.social-icons a img {
+  width: 28px;
+  margin-left: 15px;
+  vertical-align: middle;
+  transition: opacity 0.2s;
+ 
+}
+
+.social-icons a img:hover {
+  opacity: 0.8;
+}
+
+.world-map {
+  margin-top: 20px;
+}
+
+/* Copy */
+.footer-copy {
+  text-align: center;
+  font-size: 13px;
+  color: #d1edf1;
+  padding-top: 20px;
+}
+
+.footer-copy hr {
+  border-color: #3abed6;
+  margin-bottom: 15px;
+}
+.endLogo {
+    width: 204px;
+    height: 78px;
+    background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.arrow{
+  width: 20px;
+  height: 15px;
+}
